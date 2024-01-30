@@ -1,8 +1,9 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
+import './GalleryList.css';
 
 function GalleryList({ gallerys, galleryRefreshCallBack })  {
     return (
-        <div data-testid="galleryList">
+        <div data-testid="galleryList" className='myForm'>
             {gallerys.map((gallery) => {
                 return (
                     <GalleryItem 

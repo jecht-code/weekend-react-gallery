@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 
+
 function GalleryItem({ gallerys, galleryRefreshCallBack }) {
     //Axios PUT call by id
     const updateGallery = (galleryId) => {
@@ -22,6 +23,7 @@ function GalleryItem({ gallerys, galleryRefreshCallBack }) {
     const [togglepicture, setTogglePicture] = useState(false);
     //No Delete function
     return (
+        
         <div data-testid="galleryItem">
             <div data-testid="toggle" onClick={() => setTogglePicture(!togglepicture)}>
                 {togglepicture ? (
@@ -44,6 +46,7 @@ function GalleryItem({ gallerys, galleryRefreshCallBack }) {
                 <p>{gallerys.likes} people love this!</p>
             </div>
         </div>
+        
     )
 }
 
